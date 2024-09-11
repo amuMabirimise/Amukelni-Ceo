@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --green: #27ae60;
+    --black: #192a56;
+    --box-shadow: 0.5rem 1.5rem rgba(0,0,0, .1);
+    --ghost-white: #F8F8FF;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+section :nth-child(even){
+    background: var(--ghost-white);
+}
+
+.sub-heading {
+    text-align: center;
+    color: var(--black);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading {
+    text-align: center;
+    color: #0f52ba;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    background: var(--ghost-white);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--ghost-white);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: var(--ghost-white);
+    background: #0f52ba;
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: var(--ghost-white);
+    background: #0f52ba;
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+/* Custom styles for the home section Swiper */
+.home .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.home .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.home .swiper-container .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    flex-wrap: wrap;         /* Allow the content to wrap within its container */
+    padding-top: 9rem;
+    text-align: center;      /* Center the text inside the content */
+}
+
+.home .swiper-container .swiper-slide .content {
+    flex: 1 1 50%;           /* Adjust the size of the content container */
+    max-width: 800px;        /* Limit the maximum width for better readability */
+    margin: 0 auto;          /* Center the content container */
+}
+
+.home .swiper-container .swiper-slide .image {
+    flex: 0 1 35%;                  /* Adjust size to fit the image */
+    display: flex;
+    justify-content: center;        /* Center the image horizontally */
+    align-items: center;            /* Center the image vertically */
+    width: 30%;                   /* Adjust size as needed */
+    height: 100%;                  /* Adjust size as needed */
+    background: var(--ghost-white); /* Background color for the bubble effect */
+    border-radius: 50%;             /* Make the container circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a 3D effect */
+    overflow: hidden;               /* Hide any overflow to maintain circular shape */
+    margin-left: 0.1rem;              /* Space between image and content */
+}
+
+.home .swiper-container .swiper-slide .image img {
+    width: 100%;                    /* Scale image to fill the container */
+    height: 100%;                   /* Scale image to fill the container */
+    object-fit: cover;              /* Ensure image covers container without distortion */
+    border-radius: 50%;            /* Make the image itself circular */
+}
+
+.home .swiper-container .swiper-slide .content span {
+    color: var(--black);
+    font-size: 4rem;
+    background: var(--ghost-white);
+    display: block;          /* Ensure it takes its own line */
+    margin-bottom: 1.5rem;   /* Add spacing below the span */
+}
+
+.home .swiper-container .swiper-slide .content h3 {
+    color: #0f52ba;
+    font-size: 6rem;
+    background: #FAFAFA;
+    margin-bottom: 1rem;     /* Add spacing below the heading */
+}
+
+.home .swiper-container .swiper-slide .content p {
+    color: var(--light-color);
+    font-size: 2.2rem;
+    padding: .5rem 0;
+    line-height: 1.6;
+    background: #FAFAFA;
+    margin-bottom: 2rem;     /* Add space below the paragraph */
+}
+
+.home .swiper-container .swiper-slide .content a {
+    color: var(--ghost-white);
+    background: #0f52ba;
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    text-transform: uppercase;  /* Add a professional touch */
+}
+
+.home .swiper-container .swiper-slide .content a:hover {
+    background: var(--black);
+    letter-spacing: .1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media (max-width: 991px){
+    * {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+    }
+    
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--ghost-white);
+        border-bottom: .1rem solid rgba(0,0,0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        
+    }
+
+    #search-form #search-box{
+       width: 80%;
+       margin: 0 1rem;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    .home .swiper-container .swiper-slide .content span {
+        color: var(--black);
+        font-size: 3rem;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .home .swiper-container .swiper-slide .content h3 {
+        color: #0f52ba;
+        font-size: 5rem;
+        background: #F8F8FF;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .home .swiper-container .swiper-slide .content p {
+        color: var(--light-color);
+        font-size: 2rem;
+        padding: .5rem 0;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .home .swiper-container .swiper-slide .image {
+        background: #F8F8FF;
+        flex: 1 1 45rem;
+        padding-left: 4%;
+    }
+
+    .order form .inputBox .input{
+        width: 100%;
+    }
+}
